@@ -54,11 +54,11 @@ window.onload = function details() {
   var x = [" React-JS ", " Node ", " Express ", " MongoDB "];
   document.getElementById("array").innerHTML = x;
 
-  var str = "TY-IT-45";
+  var str = "Sharvil Dandekar TY-IT-07";
   document.getElementById("string").innerHTML = str;
 
   try {
-    adddlert("Welcome guest!");
+    alert("Welcome guest!");
   } catch (error) {
     alert(error);
   }

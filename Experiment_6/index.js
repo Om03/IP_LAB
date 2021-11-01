@@ -1,10 +1,10 @@
 //Details
-var fname = "Om Parab";
-var froll = "TY-IT-45";
+var fname = "Sharvil Dandekar";
+var froll = "TY-IT-007";
 var fsex = "Male";
 
 //Operator
-var x = 20;
+var x = 90;
 var y = 2;
 var z = x + y;
 var a = x - y;
@@ -17,9 +17,9 @@ class Car {
     this.year = year;
   }
 }
-let myCar1 = new Car("Ford", 2014);
-let myCar2 = new Car("Audi", 2019);
-let myCar3 = new Car("Porch", 2015);
+let myCar1 = new Car("Koenigsegg", 2018);
+let myCar2 = new Car("Bugatti", 2019);
+let myCar3 = new Car("SSC", 2020);
 
 window.onload = function details() {
   document.getElementById("1st").innerHTML = fname;
@@ -47,7 +47,7 @@ window.onload = function details() {
   for (let i = 0; i < 6; i++) {
     var node = document.createElement("div");
     node.className = "card";
-    node.innerHTML = `${i} - iteration`;
+    node.innerHTML = `Iteration${i}`;
     document.getElementById("forloop").appendChild(node);
   }
 
