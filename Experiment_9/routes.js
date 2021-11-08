@@ -2,7 +2,7 @@ const express = require("express");
 const userModel = require("./models");
 const app = express();
 
-app.post("/add-customer", async (request, response) => {
+app.post("/add-frameworks", async (request, response) => {
   const user = new userModel(request.body);
   try {
     await user.save();
@@ -14,7 +14,7 @@ app.post("/add-customer", async (request, response) => {
   }
 });
 
-app.get("/get-customer", async (request, response) => {
+app.get("/get-frameworks", async (request, response) => {
   const users = await userModel.find({});
 
   try {
